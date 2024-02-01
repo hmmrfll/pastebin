@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pastebin - Create New Paste</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Здесь могут быть другие ваши стили -->
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2 class="mb-4">Create New Paste</h2>
+            <form action="/create" method="post">
+                <div class="form-group">
+                    <label for="pasteContent">Paste Content:</label>
+                    <textarea class="form-control" id="pasteContent" name="pasteContent" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="expirationDate">Expiration Date:</label>
+                    <input type="datetime-local" class="form-control" id="expirationDate" name="expirationDate" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Paste</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

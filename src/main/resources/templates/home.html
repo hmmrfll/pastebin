@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Pastebin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Здесь могут быть другие ваши стили -->
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1>Welcome to <a th:href="@{/home/pastebin}">Pastebin</a></h1>
+            <p>This is a simple pastebin application.</p>
+            <p>Please login or register to continue.</p>
+            <div class="text-center">
+                <a th:href="@{/login}" class="btn btn-primary mr-2">Login</a>
+                <a th:href="@{/register}" class="btn btn-secondary">Register</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
